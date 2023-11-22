@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://be7d5fw3kd5gp"]
+
+[ext_resource type="Script" path="res://GameScreen.gd" id="1_1xll8"]
+[ext_resource type="Texture2D" uid="uid://b5mq4xe1i4epi" path="res://3-Tree.png" id="1_mjw3o"]
+
+[node name="GameScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1xll8")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_mjw3o")
+expand_mode = 1
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 555.0
+offset_right = 193.0
+offset_bottom = 641.0
+text = "Back"
